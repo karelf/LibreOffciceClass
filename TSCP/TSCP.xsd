@@ -1,0 +1,273 @@
+<xs:schema xmlns="http://www.tscp.org/schemas/bails-v1" xmlns:bails="http://www.tscp.org/schemas/bails-v1"
+xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sstl="http://www.iso.org/schema/stl"
+targetNamespace="http://www.tscp.org/schemas/bails-v1" elementFormDefault="qualified"
+attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.iso.org/schema/stl" schemaLocation="ISO3166CountryCode.xsd"/>
+
+	<xs:import namespace="http://www.iso.org/schema/stl" schemaLocation="ISO639LanguageCode.xsd"/>
+
+	<xs:element name="BusinessAuthorizationLabels">
+		<xs:annotation />
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="3">
+				<xs:element ref="BusinessAuthorizationLabel"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BusinessAuthorizationLabel">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="ImpactLevel"/>
+				<xs:element ref="PolicyAuthority"/>
+				<xs:element ref="Policy"/>
+				<xs:element ref="BusinessAuthorization" minOccurs="0"/>
+				<xs:element ref="BusinessAuthorizationCategory" minOccurs="0"/>
+				<xs:element ref="PhysicalMarkings" minOccurs="0"/>
+				<xs:element ref="Authorization" minOccurs="0"/>
+				<xs:element ref="MarkingReview" minOccurs="0"/>
+				<xs:element ref="Extensions" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="PolicyAuthority" type="PolicyAuthority" nillable="true"/>
+	<xs:complexType name="PolicyAuthority" abstract="true">
+		<xs:sequence>
+			<xs:element name="Name" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="Identifier" type="xs:anyURI" use="required"/>
+	</xs:complexType>
+	<xs:element name="CommercialPolicyAuthority" type="CommercialPolicyAuthority" nillable="true"/>
+	<xs:complexType name="CommercialPolicyAuthority" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="PolicyAuthority"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="NationalPolicyAuthority" type="NationalPolicyAuthority" nillable="true"/>
+	<xs:complexType name="NationalPolicyAuthority" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="PolicyAuthority">
+				<xs:sequence>
+				<xs:element name="Country" type="sstl:ISO3166CountryCode"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="ExportPolicyAuthority" type="ExportPolicyAuthority" nillable="true"/>
+	<xs:complexType name="ExportPolicyAuthority" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="PolicyAuthority">
+				<xs:sequence>
+					<xs:element name="Country" type="sstl:ISO3166CountryCode"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Policy">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name=" type" type="xs:string" minOccurs="0"/>
+				<xs:element name="Name" type="xs:string" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="Identifier" type="xs:anyURI" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BusinessAuthorization">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Name" type="xs:anyURI" minOccurs="0"/>
+				<xs:element name="Locator" type="xs:anyURI" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="Identifier" type="xs:anyURI" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="BusinessAuthorizationCategory">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Reference" type="xs:anyURI" minOccurs="0"/>
+				<xs:element name="Locator" type="xs:anyURI" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="Identifier" type="xs:anyURI" use="required"/>
+			<xs:attribute name="OID" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ImpactLevel" type="ImpactLevel"/>
+	<xs:complexType name="ImpactLevel" abstract="true"/>
+	<xs:element name="Undefined_ImpactLevel" type="Undefined_ImpactLevel"/>
+	<xs:complexType name="Undefined_ImpactLevel" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="ImpactLevel"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="FIPS_199_ImpactLevel" type="FIPS_199_ImpactLevel"/>
+	<xs:complexType name="FIPS_199_ImpactLevel" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="ImpactLevel">
+				<xs:sequence>
+					<xs:element name="Value">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="Low"/>
+								<xs:enumeration value="Moderate"/>
+								<xs:enumeration value="High"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="UK_Cabinet_ImpactLevel" type="UK_Cabinet_ImpactLevel"/>
+	<xs:complexType name="UK_Cabinet_ImpactLevel" mixed="false">
+		<xs:complexContent mixed="false">
+			<xs:extension base="ImpactLevel">
+				<xs:sequence>
+					<xs:element name="Value">
+						<xs:simpleType>
+							<xs:restriction base="xs:string">
+								<xs:enumeration value="0"/>
+								<xs:enumeration value="1"/>
+								<xs:enumeration value="2"/>
+								<xs:enumeration value="3"/>
+							</xs:restriction>
+						</xs:simpleType>
+					</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="Parts">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="4">
+				<xs:element ref="Part"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Organization">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Name">
+		<xs:simpleType>
+			<xs:restriction base="xs:string"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Level" nillable="true">
+		<xs:simpleType>
+			<xs:restriction base="xs:byte">
+				<xs:enumeration value="2"/>
+			</xs:restriction>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="PhysicalMarkings">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Parts" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Authorization">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="MarkingOrganization" type="xs:string" minOccurs="0"/>
+				<xs:element name="Authorizer" type="xs:string" minOccurs="0"/>
+				<xs:element ref="Validity" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Validity">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="StartDate"/>
+				<xs:element ref="EndDate"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="StartDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+
+
+	<xs:element name="EndDate">
+		<xs:simpleType>
+			<xs:restriction base="xs:date"/>
+		</xs:simpleType>
+	</xs:element>
+	<xs:element name="Part">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Value" type="xs:string"/>
+				<xs:element ref="LocalizedParts" minOccurs="0"/>
+			</xs:sequence>
+			<xs:attribute name="Identifier" type="xs:anyURI" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalizedParts">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="LocalizedPart"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LocalizedPart">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Language" type="sstl:ISO639LanguageCode"/>
+				<xs:element name="Value" type="xs:string"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MarkingReview">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="ReviewDate" type="xs:date" minOccurs="0"/>
+				<xs:element name="ReleaseDate" type="xs:date" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Extension">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="name" type="xs:anyURI" use="required"/>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Extensions">
+		<xs:complexType>
+			<xs:sequence minOccurs="0" maxOccurs="unbounded">
+				<xs:element ref="Extension"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

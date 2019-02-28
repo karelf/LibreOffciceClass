@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<country-codes generated="2019-02-28T08:56:18.880668+01:00">
+   <country id="CH" version="62">
+      <alpha-2-code>CH</alpha-2-code>
+      <alpha-3-code>CHE</alpha-3-code>
+      <numeric-code>756</numeric-code>
+      <independent>YES</independent>
+      <status>officially-assigned</status>
+      <full-name lang3code="fra" xml:lang="fr">la Confédération suisse</full-name>
+      <full-name lang3code="eng" xml:lang="en">the Swiss Confederation</full-name>
+      <short-name lang3code="deu" xml:lang="de">Schweiz (die)</short-name>
+      <short-name lang3code="fra" xml:lang="fr">Suisse (la)</short-name>
+      <short-name lang3code="ita" xml:lang="it">Svizzera (la)</short-name>
+      <short-name lang3code="roh" xml:lang="rm">Svizra (la)</short-name>
+      <short-name lang3code="eng" xml:lang="en">Switzerland</short-name>
+      <short-name-upper-case lang3code="deu" xml:lang="de">Schweiz (die)</short-name-upper-case>
+      <short-name-upper-case lang3code="fra" xml:lang="fr">SUISSE</short-name-upper-case>
+      <short-name-upper-case lang3code="ita" xml:lang="it">Svizzera (la)</short-name-upper-case>
+      <short-name-upper-case lang3code="roh" xml:lang="rm">Svizra (la)</short-name-upper-case>
+      <short-name-upper-case lang3code="eng" xml:lang="en">SWITZERLAND</short-name-upper-case>
+      <language>
+         <language-alpha-2-code>de</language-alpha-2-code>
+         <language-alpha-3-code>deu</language-alpha-3-code>
+         <language-is-administrative>YES</language-is-administrative>
+      </language>
+      <language>
+         <language-alpha-2-code>fr</language-alpha-2-code>
+         <language-alpha-3-code>fra</language-alpha-3-code>
+         <language-is-administrative>YES</language-is-administrative>
+      </language>
+      <language>
+         <language-alpha-2-code>it</language-alpha-2-code>
+         <language-alpha-3-code>ita</language-alpha-3-code>
+         <language-is-administrative>YES</language-is-administrative>
+      </language>
+      <language>
+         <language-alpha-2-code>rm</language-alpha-2-code>
+         <language-alpha-3-code>roh</language-alpha-3-code>
+         <language-is-administrative>YES</language-is-administrative>
+      </language>
+      <language>
+         <language-alpha-2-code>en</language-alpha-2-code>
+         <language-alpha-3-code>eng</language-alpha-3-code>
+         <language-is-administrative>NO</language-is-administrative>
+      </language>
+      <category id="153">
+         <category-name lang3code="deu" xml:lang="de">Kanton</category-name>
+         <category-name lang3code="eng" xml:lang="en">canton</category-name>
+         <category-name lang3code="roh" xml:lang="rm">chantun</category-name>
+         <category-name lang3code="ita" xml:lang="it">cantone</category-name>
+         <category-name lang3code="fra" xml:lang="fr">canton</category-name>
+         <category-name-plural lang3code="eng" xml:lang="en">cantons</category-name-plural>
+      </category>
+      <subdivision category-id="153">
+         <subdivision-code>CH-AG</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Aargau</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-AI</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Appenzell Innerrhoden</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-AR</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Appenzell Ausserrhoden</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-BE</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Bern</subdivision-locale-name>
+         </subdivision-locale>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Berne</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-BL</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Basel-Landschaft</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-BS</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Basel-Stadt</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-FR</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Freiburg</subdivision-locale-name>
+         </subdivision-locale>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Fribourg</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-GE</subdivision-code>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Genève</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-GL</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Glarus</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-GR</subdivision-code>
+         <subdivision-locale lang3code="ita" xml:lang="it">
+            <subdivision-locale-name>Grigioni</subdivision-locale-name>
+         </subdivision-locale>
+         <subdivision-locale lang3code="roh" xml:lang="rm">
+            <subdivision-locale-name>Grischun</subdivision-locale-name>
+         </subdivision-locale>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Grisons</subdivision-locale-name>
+         </subdivision-locale>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Graubünden</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-JU</subdivision-code>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Jura</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-LU</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Luzern</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-NE</subdivision-code>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Neuchâtel</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-NW</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Nidwalden</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-OW</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Obwalden</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-SG</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Sankt Gallen</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-SH</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Schaffhausen</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-SO</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Solothurn</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-SZ</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Schwyz</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-TG</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Thurgau</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-TI</subdivision-code>
+         <subdivision-locale lang3code="ita" xml:lang="it">
+            <subdivision-locale-name>Ticino</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-UR</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Uri</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-VD</subdivision-code>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Vaud</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-VS</subdivision-code>
+         <subdivision-locale lang3code="fra" xml:lang="fr">
+            <subdivision-locale-name>Valais</subdivision-locale-name>
+         </subdivision-locale>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Wallis</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-ZG</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Zug</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <subdivision category-id="153">
+         <subdivision-code>CH-ZH</subdivision-code>
+         <subdivision-locale lang3code="deu" xml:lang="de">
+            <subdivision-locale-name>Zürich</subdivision-locale-name>
+         </subdivision-locale>
+      </subdivision>
+      <list-source>Swiss constitution (2002-10-15)</list-source>
+      <code-source>Swiss Association for Standardization (SNV), 1987-08-26</code-source>
+   </country>
+</country-codes>
