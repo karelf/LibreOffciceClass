@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:tscp:names:baf:1.1" xmlns:baf="urn:tscp:names:baf:1.1" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0">
+  <xs:import namespace="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" schemaLocation="loext.xsd"/>
+  <xs:element name="BusinessAuthorization">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="baf:PolicyAuthorityName"/>
+        <xs:element ref="baf:PolicyName"/>
+        <xs:element ref="baf:AdministrativeData"/>
+        <xs:element ref="baf:Included"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PolicyAuthorityName" type="xs:string"/>
+  <xs:element name="PolicyName" type="xs:string"/>
+  <xs:element name="AdministrativeData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="baf:ProgramID"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ProgramID" type="xs:NMTOKEN"/>
+  <xs:element name="Included">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="baf:BusinessAuthorizationCategory"/>
+        <xs:element ref="loext:Marking"/>
+        <xs:element maxOccurs="unbounded" ref="loext:IntellectualPropertyPart"/>
+        <xs:element maxOccurs="unbounded" ref="loext:IntellectualPropertyPartNumber"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="BusinessAuthorizationCategory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="baf:LabelingRules"/>
+        <xs:element ref="baf:ImpactLevel"/>
+      </xs:sequence>
+      <xs:attribute name="Identifier" use="required" type="xs:NMTOKEN"/>
+      <xs:attribute name="Name" use="required"/>
+      <xs:attribute name="loextAbbreviatedName" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ImpactLevel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" ref="baf:LabelingRules"/>
+        <xs:element ref="baf:Scale"/>
+        <xs:element ref="baf:ConfidentalityValue"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Scale" type="xs:NCName"/>
+  <xs:element name="ConfidentalityValue" type="xs:integer"/>
+  <xs:element name="LabelingRules">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="baf:VisualMarkingPart"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="VisualMarkingPart">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="baf:Identifier"/>
+        <xs:element ref="baf:Value"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Identifier" type="xs:string"/>
+  <xs:element name="Value" type="xs:string"/>
+</xs:schema>

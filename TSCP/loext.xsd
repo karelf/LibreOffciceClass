@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:baf="urn:tscp:names:baf:1.1" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0">
+  <xs:import namespace="urn:tscp:names:baf:1.1" schemaLocation="example.xsd"/>
+  <xs:element name="Marking">
+    <xs:complexType>
+      <xs:attribute name="Name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IntellectualPropertyPart">
+    <xs:complexType>
+      <xs:attribute name="Name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="IntellectualPropertyPartNumber">
+    <xs:complexType>
+      <xs:attribute name="Name" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
