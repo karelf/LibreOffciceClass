@@ -1,0 +1,57 @@
+install python - Linux clon
+ 
+ 
+ sudo apt-get install python3-pip
+ sudo pip3 install python-dateutil
+ sudo pip3 install psycopg2
+ sudo pip3 install pytz
+ 
+ forst@CZNB77FB0D:~/fortuna/scripts$ python3 replay_match.py  -h
+usage: replay_match [-h] [-c FILE] [-n HOSTNAME] [-p PORT] [-i FIXTURE_ID]
+                    [-l LOG_FILE | -g GZIP_FILE] [-f FASTER] [--flush]
+                    [-d INIT_DELAY] [-m MAX_DELAY] [--safety-check]
+                    [--output {FULL,SILENT,STDOUT}] [-s DATABASE_STRING]
+                    [-z LOG_TIMEZONE] [--debug] [--key-press] [-o] [-M MULTI]
+
+Replay match from log (plain or gzipped file) in the same speed or faster.
+Usage examples:
+  dev    ./replay_match.py --hostname czdev-bgfeed-app-01.ux.ifortuna.cz --port 8080 --log-file match.json --faster 10 --init-delay 300 --max-delay 180 --database-string 'postgresql://feeds_maint:feeds_maint-pass@czdev-bgfeed-db-01.ux.ifortuna.cz/bgfeeds'
+  test   ./replay_match.py --hostname cztc-bgfeed-receiver-01.ux.ifortuna.cz --port 8080 --log-file match.json --faster 10 --init-delay 300 --log-timezone Europe/Prague --max-delay 180 --database-string 'postgresql://feeds_maint:feeds_maint-pass@cztc-bgfeed-db-01.ux.ifortuna.cz/bgfeeds'
+  stage  ./replay_match.py --hostname czdev2-bgfeed-receiver-01.ux.ifortuna.cz --port 8080 --log-file match.json --faster 10 --init-delay 300 --max-delay 180 --database-string 'postgresql://feeds_maint:feeds_maint-pass@czdev2-bgfeed-db-01.ux.ifortuna.cz/bgfeeds'
+optional arguments:
+  -h, --help            show this help message and exit
+  -c FILE, --config-file FILE
+                        Specify config file
+  -n HOSTNAME, --hostname HOSTNAME
+                        Receiver hostname
+  -p PORT, --port PORT  Receiver port
+  -i FIXTURE_ID, --fixture-id FIXTURE_ID
+                        Fixture Id
+  -l LOG_FILE, --log-file LOG_FILE
+                        Log file location
+  -g GZIP_FILE, --gzip-file GZIP_FILE
+                        Gzip compressed log file location
+  -f FASTER, --faster FASTER
+                        How many times speedup playing
+  --flush               Stream immediately, no wait
+  -d INIT_DELAY, --init-delay INIT_DELAY
+                        Delay (minutes) between first Fixture message and match start
+  -m MAX_DELAY, --max-delay MAX_DELAY
+                        Maximum delay between messages
+  --safety-check        Check the DB for collisions only
+  --output {FULL,SILENT,STDOUT}
+                        Output type, STDOUT for print only
+  -s DATABASE_STRING, --database-string DATABASE_STRING
+                        Database connection string (Example: 'postgresql://username:pass@hostname/database')
+  -z LOG_TIMEZONE, --log-timezone LOG_TIMEZONE
+                        Time zone for the timezoneless timestamps in log's first column
+  --debug               Print verbose debug info to stderr
+  --key-press           Instead of delays wait for keypress
+  -o, --origin          Try to use original ids if not already present
+  -M MULTI, --multi MULTI
+                        Multiple instances of same match
+						
+						
+						
+						
+						
