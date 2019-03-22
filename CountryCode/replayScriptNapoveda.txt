@@ -17,7 +17,7 @@ Replay match from log (plain or gzipped file) in the same speed or faster.
 Usage examples:
   dev    ./replay_match.py --hostname czdev-bgfeed-app-01.ux.ifortuna.cz --port 8080 --log-file match.json --faster 10 --init-delay 300 --max-delay 180 --database-string 'postgresql://feeds_maint:feeds_maint-pass@czdev-bgfeed-db-01.ux.ifortuna.cz/bgfeeds'
   test   ./replay_match.py --hostname cztc-bgfeed-receiver-01.ux.ifortuna.cz --port 8080 --log-file match.json --faster 10 --init-delay 300 --log-timezone Europe/Prague --max-delay 180 --database-string 'postgresql://feeds_maint:feeds_maint-pass@cztc-bgfeed-db-01.ux.ifortuna.cz/bgfeeds'
-  stage  ./replay_match.py --hostname czdev2-bgfeed-receiver-01.ux.ifortuna.cz --port 8080 --log-file match.json --faster 10 --init-delay 300 --max-delay 180 --database-string 'postgresql://feeds_maint:feeds_maint-pass@czdev2-bgfeed-db-01.ux.ifortuna.cz/bgfeeds'
+  stage  ./replay_match.py --hostname czdev2-bgfeed-receiver-01.ux.ifortuna.cz --port 8080 --log-file 5799640_baseball.json --faster 1 --init-delay 300 --max-delay 180 --database-string 'postgresql://feeds_maint:feeds_maint-pass@czdev2-bgfeed-db-01.ux.ifortuna.cz/bgfeeds'
 optional arguments:
   -h, --help            show this help message and exit
   -c FILE, --config-file FILE
