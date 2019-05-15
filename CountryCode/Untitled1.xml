@@ -1078,11 +1078,35 @@
         <MobileOperName>Vodafone</MobileOperName>
             <MobileOPerNumber>777</MobileOPerNumber>
         <MobileOperName>T-Mobile</MobileOperName>
-        <MobileOPerNumber>603</MobileOPerNumber>
+			<MobileOPerNumber>603</MobileOPerNumber>
         <MobileOperName>O2</MobileOperName>
             <MobileOperName>602</MobileOperName>
         <SubRegName>Středočeský kraj</SubRegName>
-        <SubRegNumber>31, 32</SubRegNumber>
+			<SubRegNumber>31, 32</SubRegNumber>
+		<SubRegName>Praha</SubRegName>
+			<SubRegNumber>2</SubRegNumber>
+		<SubRegName>Karlovarský kraj</SubRegName>
+			<SubRegNumber>35</SubRegNumber>
+		<SubRegName>Plzeňský kraj</SubRegName>
+			<SubRegNumber>37</SubRegNumber>
+		<SubRegName>Ústecký kraj</SubRegName>
+			<SubRegNumber>41, 47</SubRegNumber>
+		<SubRegName>Pardubický kraj</SubRegName>
+			<SubRegNumber>46</SubRegNumber>
+		<SubRegName>Liberecký kraj</SubRegName>
+			<SubRegNumber>48</SubRegNumber>
+		<SubRegName>Královohradecký kraj</SubRegName>
+			<SubRegNumber>49</SubRegNumber>
+		<SubRegName>Jihomoravský kraj</SubRegName>
+			<SubRegNumber>51, 53, 54</SubRegNumber>
+		<SubRegName>Moravskoslezský kraj</SubRegName>
+			<SubRegNumber>55, 59</SubRegNumber>
+		<SubRegName>Kraj Vysočina</SubRegName>
+			<SubRegNumber>56</SubRegNumber>
+		<SubRegName>Zlínský kraj</SubRegName>
+			<SubRegNumber>57</SubRegNumber>
+		<SubRegName>Olomoucký kraj</SubRegName>
+			<SubRegNumber>58</SubRegNumber>
     </row>
     <row>
         <name>Denmark</name>
