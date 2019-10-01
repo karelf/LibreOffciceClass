@@ -4706,3 +4706,4 @@ The data type used for indicating the language of the resource, described using 
 		</xsd:simpleContent>
 	</xsd:complexType>
 </xsd:schema>
+
