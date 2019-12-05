@@ -9,14 +9,14 @@
     </baf:AdministrativeData>
     <baf:Included>
         <!-- Translators: the Name attribute in this string can be localized -->
-        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:Free" Name="Non-Business" loextAbbreviatedName="F">
+        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:Free" Name="volne-Free" loextAbbreviatedName="F">
             <baf:LabelingRules/>
             <baf:ImpactLevel>
                 <baf:LabelingRules>
                     <baf:VisualMarkingPart>
                         <baf:Identifier>Document: Header</baf:Identifier>
                         <!-- Translators: this string can be localized -->
-                        <baf:Value>Classification: NO </baf:Value>
+                        <baf:Value>Bez klasifikace </baf:Value>
                     </baf:VisualMarkingPart>
                 </baf:LabelingRules>
                 <baf:Scale>UK-Cabinet</baf:Scale>
@@ -29,7 +29,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Classification: Pro vnitřní potřebu</baf:Value>
+                    <baf:Value>Klasifikace: Pro vnitřní potřebu</baf:Value>
                 </baf:VisualMarkingPart>
             </baf:LabelingRules>
             <baf:ImpactLevel>
@@ -43,7 +43,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Classification: Tajné</baf:Value>
+                    <baf:Value>Klasifikace: Tajné</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
@@ -51,7 +51,7 @@
                     <baf:Value>Nekopírovat bez písemného souhlasu, souhlas musí být připojen ke každé kopii.</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
-                    <baf:Identifier>Document: Watermark</baf:Identifier>
+                    <baf:Identifier>Doument: Watermark</baf:Identifier>
                     <!-- Translators: this string can be localized -->
                     <baf:Value>Tajné</baf:Value>
                 </baf:VisualMarkingPart>
@@ -67,7 +67,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Classification: eye only</baf:Value>
+                    <baf:Value>Klasifikace: Pouze k nahládnutí</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
@@ -77,7 +77,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Watermark</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>eye only</baf:Value>
+                    <baf:Value>Pouze k nahlédnutí</baf:Value>
                 </baf:VisualMarkingPart>
             </baf:LabelingRules>
             <baf:ImpactLevel>
