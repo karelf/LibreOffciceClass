@@ -67,7 +67,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Klasifikace: Pouze k nahládnutí</baf:Value>
+                    <baf:Value>Klasifikace: Pouze k nahlédnutí</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
