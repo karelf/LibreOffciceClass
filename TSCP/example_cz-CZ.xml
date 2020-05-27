@@ -9,7 +9,7 @@
     </baf:AdministrativeData>
     <baf:Included>
         <!-- Translators: the Name attribute in this string can be localized -->
-        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:Free" Name="volne-Free" loextAbbreviatedName="F">
+        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:Free" Name="Neklasifikováno." loextAbbreviatedName="F">
             <baf:LabelingRules/>
             <baf:ImpactLevel>
                 <baf:LabelingRules>
@@ -24,7 +24,7 @@
             </baf:ImpactLevel>
         </baf:BusinessAuthorizationCategory>
         <!-- Translators: the Name attribute in this string can be localized -->
-        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:Basic" Name="Pro vnitřní potřebu" loextAbbreviatedName="Z">
+        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:Basic" Name="Pouze pro vnitřní potřebu." loextAbbreviatedName="Z">
             <baf:LabelingRules>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
@@ -38,7 +38,7 @@
             </baf:ImpactLevel>
         </baf:BusinessAuthorizationCategory>
         <!-- Translators: the Name attribute in this string can be localized -->
-        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:tajné" Name="Tajné" loextAbbreviatedName="T">
+        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:tajné" Name="Tajné!" loextAbbreviatedName="T">
             <baf:LabelingRules>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
@@ -62,22 +62,22 @@
             </baf:ImpactLevel>
         </baf:BusinessAuthorizationCategory>
         <!-- Translators: the Name attribute in this string can be localized -->
-        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:eye-only" Name="eye only" loextAbbreviatedName="E">
+        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:eye-only" Name="Eye only" loextAbbreviatedName="E">
             <baf:LabelingRules>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Klasifikace: Pouze k nahlédnutí</baf:Value>
+                    <baf:Value>Pouze k nahlédnutí</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>This content is marked eye only.</baf:Value>
+                    <baf:Value>/Pouze k nahlédnutí.</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Watermark</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Pouze k nahlédnutí</baf:Value>
+                    <baf:Value>Pouze k nahlédnutí!</baf:Value>
                 </baf:VisualMarkingPart>
             </baf:LabelingRules>
             <baf:ImpactLevel>
