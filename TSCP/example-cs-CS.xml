@@ -16,7 +16,7 @@
                     <baf:VisualMarkingPart>
                         <baf:Identifier>Document: Header</baf:Identifier>
                         <!-- Translators: this string can be localized -->
-                        <baf:Value>Classification: NO </baf:Value>
+                        <baf:Value>Klasifikace: veřejné </baf:Value>
                     </baf:VisualMarkingPart>
                 </baf:LabelingRules>
                 <baf:Scale>UK-Cabinet</baf:Scale>
@@ -29,7 +29,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Classification: Pro vnitřní potřebu</baf:Value>
+                    <baf:Value>Klasifikace: Pro vnitřní potřebu</baf:Value>
                 </baf:VisualMarkingPart>
             </baf:LabelingRules>
             <baf:ImpactLevel>
@@ -38,17 +38,17 @@
             </baf:ImpactLevel>
         </baf:BusinessAuthorizationCategory>
         <!-- Translators: the Name attribute in this string can be localized -->
-        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:tajné" Name="Tajné" loextAbbreviatedName="T">
+        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:Tajné" Name="Tajné" loextAbbreviatedName="T">
             <baf:LabelingRules>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Classification: Tajné</baf:Value>
+                    <baf:Value>Klasifikace: Tajné</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Nekopírovat bez písemného souhalsu, osuhals musí být připojen ke každé kopii.</baf:Value>
+                    <baf:Value>Nekopírovat bez písemného souhlsau, souhlas musí být připojen ke každé kopii.</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Watermark</baf:Identifier>
@@ -62,22 +62,22 @@
             </baf:ImpactLevel>
         </baf:BusinessAuthorizationCategory>
         <!-- Translators: the Name attribute in this string can be localized -->
-        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:eye-only" Name="eye only" loextAbbreviatedName="E">
+        <baf:BusinessAuthorizationCategory Identifier="urn:example:tscp:1:eye-only" Name="Eye only" loextAbbreviatedName="E">
             <baf:LabelingRules>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Classification: eye only</baf:Value>
+                    <baf:Value>Klasifikace: Pouze k nahlédnutí</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>This content is marked eye only.</baf:Value>
+                    <baf:Value>This content is marked Eye only.</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Watermark</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>eye only</baf:Value>
+                    <baf:Value>Eye only</baf:Value>
                 </baf:VisualMarkingPart>
             </baf:LabelingRules>
             <baf:ImpactLevel>
