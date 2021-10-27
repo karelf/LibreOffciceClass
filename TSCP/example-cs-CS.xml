@@ -48,7 +48,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Nekopírovat bez písemného souhlsau, souhlas musí být připojen ke každé kopii.</baf:Value>
+                    <baf:Value>Nekopírovat bez písemného souhlasu; souhlas musí být připojen ke každé kopii.</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Watermark</baf:Identifier>
@@ -67,7 +67,7 @@
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Header</baf:Identifier>
                     <!-- Translators: this string can be localized -->
-                    <baf:Value>Klasifikace: Pouze k nahlédnutí</baf:Value>
+                    <baf:Value>Klasifikace: Pouze k nahlédnutí.</baf:Value>
                 </baf:VisualMarkingPart>
                 <baf:VisualMarkingPart>
                     <baf:Identifier>Document: Footer</baf:Identifier>
