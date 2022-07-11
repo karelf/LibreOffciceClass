@@ -2,9 +2,9 @@
 xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:sstl="http://www.iso.org/schema/stl"
 targetNamespace="http://www.tscp.org/schemas/bails-v1" elementFormDefault="qualified"
 attributeFormDefault="unqualified">
-	<!--	<xs:import namespace="http://www.iso.org/schema/stl" schemaLocation="ISO3166CountryCode.xsd"/>
+	<xs:import namespace="http://www.iso.org/schema/stl" schemaLocation="ISO3166CountryCode.xsd"/>
 
-	<xs:import namespace="http://www.iso.org/schema/stl" schemaLocation="ISO639LanguageCode.xsd"/> -->
+	<xs:import namespace="http://www.iso.org/schema/stl" schemaLocation="ISO639LanguageCode.xsd"/>
 
 	<xs:element name="BusinessAuthorizationLabels">
 		<xs:annotation />
