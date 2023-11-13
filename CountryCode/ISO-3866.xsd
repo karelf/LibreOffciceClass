@@ -1,0 +1,32 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="countries">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="country">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:string" name="name"/>
+                <xs:attribute type="xs:string" name="alpha-2"/>
+                <xs:attribute type="xs:string" name="alpha-3"/>
+                <xs:attribute type="xs:byte" name="country-code"/>
+                <xs:attribute type="xs:string" name="iso_3166-2"/>	
+                <xs:attribute type="xs:string" name="region"/>
+                <xs:attribute type="xs:string" name="sub-region"/>
+                <xs:attribute type="xs:string" name="intermediate-region"/>
+                <xs:attribute type="xs:short" name="region-code"/>
+                <xs:attribute type="xs:byte" name="sub-region-code"/>
+                <xs:attribute type="xs:string" name="intermediate-region-code"/>
+                <xs:attribute type="xs:string" name="IntTlfCode"/>
+                <xs:attribute type="xs:string" name="MobileName"/>
+                <xs:attribute type="xs:string" name="MobileNumber"/>
+                <xs:attribute type="xs:string" name="SubRegionName"/>
+                <xs:attribute type="xs:string" name="SubRegionNumber"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

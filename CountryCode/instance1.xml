@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<countries xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="file:/C:/Users/forkar/Documents/GIT-SVN-BitBuck/TSCP/CountryCode/CountryandTLF_Code.xsd">
+    <country>
+        <country-name>Czech Republic</country-name>
+        <country-alpha-2>CZ</country-alpha-2>
+        <country-alpha-3>CZE</country-alpha-3>
+        <country-code>203</country-code>
+        <country-iso-3166-2>ISO 3166-2:CZ</country-iso-3166-2>
+        <country-region>Europe</country-region>
+        <country-sub-region>Eastern Europe</country-sub-region>
+        <country-intermediate-region></country-intermediate-region>
+        <country-region-code>150</country-region-code>
+        <sub-region-code>151</sub-region-code>
+        <country-intermediate-region-code></country-intermediate-region-code>
+        <country-int-tlf-code>+420</country-int-tlf-code>
+        <regions>
+        </regions>
+        <mobile-operators>
+        </mobile-operators>
+    </country>
+</countries>

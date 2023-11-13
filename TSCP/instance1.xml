@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bails:Authorization xmlns:bails="http://www.tscp.org/schemas/bails-v1"
+ xmlns:sstl="http://www.iso.org/schema/stl"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.tscp.org/schemas/bails-v1 file:/C:/Users/forkar/Documents/GIT-SVN-BitBuck/TSCP/TSCP/TSCP.xsd">
+</bails:Authorization>
