@@ -9,7 +9,7 @@ attributeFormDefault="unqualified">
 	<xs:element name="BusinessAuthorizationLabels">
 		<xs:annotation />
 		<xs:complexType>
-			<xs:sequence minOccurs="0" maxOccurs="3">
+			<xs:sequence minOccurs="0" maxOccurs="5">
 				<xs:element ref="BusinessAuthorizationLabel"/>
 			</xs:sequence>
 		</xs:complexType>
@@ -109,6 +109,8 @@ attributeFormDefault="unqualified">
 								<xs:enumeration value="Low"/>
 								<xs:enumeration value="Moderate"/>
 								<xs:enumeration value="High"/>
+								<xs:enumeration value="Ultra High"/>
+								<xs:enumeration value="Only for eye"/>
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:element>
@@ -128,6 +130,8 @@ attributeFormDefault="unqualified">
 								<xs:enumeration value="1"/>
 								<xs:enumeration value="2"/>
 								<xs:enumeration value="3"/>
+								<xs:enumeration value="4"/>
+								<xs:enumeration value="5"/>
 							</xs:restriction>
 						</xs:simpleType>
 					</xs:element>
